@@ -5,7 +5,4 @@ k - количество орешков
 
 n = int(input('Введите количество белок: '))
 k = int(input('Введите количество орехов: '))
-if n < 10000 and k < 10000:
-    print(k % n)
-else:
-    print('false')
+print(k % n)
