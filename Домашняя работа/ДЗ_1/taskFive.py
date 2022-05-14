@@ -9,18 +9,18 @@
 Программа должна вывести два числа через пробел: стоимость покупки в рублях и копейках.
 '''
 
-n = int(input('Введите количество пирожков: '))
-a = int(input('Введите количество рублей за 1 пирожок: '))
-b = int(input('Введите количество копеек а 1 пирожок: '))
+num = int(input('Введите количество пирожков: '))
+PriceOne = int(input('Введите количество рублей за 1 пирожок: '))
+PricePenny = int(input('Введите количество копеек а 1 пирожок: '))
+PriceAll = num * PriceOne
 
-if b // 100 > 1:
-    a = a + b // 100
-    b = b % 100
+if PricePenny // 100 > 1:
+    Value = PriceAll + PricePenny // 100
+    PricePenny = PricePenny % 100
 else:
-    a = a
-    b = b
+    Value = PriceAll
+    PricePenny = PricePenny
 
-answer = str(a) + ' руб.' + str(b) + ' коп.'
-
+answer = str(Value) + ' руб.' + str(PricePenny) + ' коп.'
 print(answer)
 
