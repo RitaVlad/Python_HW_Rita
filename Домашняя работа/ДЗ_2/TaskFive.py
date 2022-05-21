@@ -4,3 +4,15 @@
 может ли ферзь попасть с первой клетки на вторую одним ходом.
 '''
 
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+if 0 <= abs(x1 - x2) < 7 and y1 == y2 or x1 == x2 and 0 <= abs(y1 - y2) < 7:
+    print('Yes')
+elif abs(x1 - x2) == abs(y1 - y2):
+    print('Yes')
+else:
+    print('No')
+
