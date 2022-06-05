@@ -3,7 +3,12 @@
 # F[1] = 1. F[2] = 1. F[k] = F[k - 1] + F[k - 2] для k >= 3.
 # Найти первое число Фибоначчи, большее N.
 
-n = int(input())
-Fib = 0
-while Fib < n:
-    Fib = 1 + 2 + F[k - 1] + F[k - 2]
+N = int(input())
+prev = 1
+cur = 1
+
+while cur <= N:
+    prev = cur - prev
+    cur = cur + prev
+print(cur)
+
