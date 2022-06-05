@@ -6,9 +6,9 @@ N = int(input())
 SuM = 0
 k = 0
 while N > 0:
-    if N % 10 > 0:
-        k += 1
         SuM += N % 10
+        k += 1
+
         N //= 10
 print(k, SuM)
 
