@@ -4,3 +4,16 @@
 # Определить, является ли N числом Фибоначчи.
 # Если является, то вывести "True", если нет – вывести "False".
 
+N = int(input())
+prev = 1
+cur = 1
+
+while N <= cur:
+    prev = cur - prev
+    cur = cur + prev
+
+if cur == N:
+    print('True')
+else:
+    print('False')
+
