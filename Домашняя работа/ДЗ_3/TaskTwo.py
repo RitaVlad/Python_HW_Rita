@@ -6,14 +6,11 @@
 # 12.2471  Пример вывода: 11 209.348132
 
 p = float(input())
-
-S1 = 10 + 10 * (p / 100)
-S2 = S1 + S1 * (p / 100)
-S1 = S2
-
-k = 1
-while S2 < 200:
-    S2 += S2
-    k += 1
-print(S2.math(0.0001), k)
+way = 10
+day = 1
+S1 = 0
+while S1 < 200:
+    S1 = way + way * (p / 100)
+    day += 1
+print('%.4f' % S1, day)
 
