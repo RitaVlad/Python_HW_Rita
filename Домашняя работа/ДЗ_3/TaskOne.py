@@ -3,33 +3,21 @@
 # определить, имеются ли в записи числа N нечетные цифры.
 # Если имеются, то вывести "True", если нет – вывести "False"
 
-# решение 1, не понимаю, почему не выводит "не имеется"
 
-N = float(input())
+n = int(input())
 res = False
 
-while N > 1:
-    if N / 2 % 1 != 0:
+while n > 0:
+    digit = n % 10
+    if digit % 2 == 1:
         res = True
         break
+    n = n // 10
 
 if res:
     print('имеется')
 else:
     print('не имеется')
-
-
-# решение 2
-
-n = int(input())
-
-a = n / 2 % 1
-if a > 0:
-    print('имеется')
-else:
-    print('не имеется')
-
-
 
 
 
