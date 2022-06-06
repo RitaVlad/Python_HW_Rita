@@ -11,6 +11,7 @@ day = 1
 S1 = 0
 while S1 < 200:
     S1 = way + way * (p / 100)
+
     day += 1
 print('%.4f' % S1, day)
 
