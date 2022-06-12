@@ -3,16 +3,6 @@
 
 
 n = int(input())
-x = 0
 
-for i in range(n):
-    if i <= i * n:
-        i = 3 * (x + 1)
-        i = '*'
-        x += 1
-    for j in range(n):
-        if j <= j * n:
-        j = 3 * (x + 1) / 2
-        j = '/'
-        x += 1
-print()
+for i in range(1, n + 1):
+    print('*' * i + '/' * i + '*' * i )
