@@ -12,7 +12,7 @@ for i in range(n + 1):
         k += (a ** i) * (-1)
     else:
         l += a ** i
-        print(1 - sumM)
+        print(1 - '%.3f' % sumM)
 
 
 
